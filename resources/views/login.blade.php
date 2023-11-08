@@ -8,7 +8,8 @@
     <title>Login</title>
 </head>
 <body>
-    <form class="form">
+    <form class="form" method="POST" action= "{{ route('login') }}">
+        @csrf
         <div class="title">Login<br><span>Faça o login para continuar</span></div>
         <input type="text" placeholder="ID" name="id" class="input">
         <input type="password" placeholder="Senha" name="senha" class="input">

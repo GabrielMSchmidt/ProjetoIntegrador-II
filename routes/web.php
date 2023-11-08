@@ -14,8 +14,10 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/login', [UserController::class, 'login'])-> name('login');
+Route::get('/', [UserController::class, 'login'])-> name('login');
+Route::post('/login', [UserController::class, 'store'])-> name('userStore');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+// Route::get('/', function () {
+//     return view('login');
+// });
