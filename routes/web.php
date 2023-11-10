@@ -13,7 +13,7 @@ use App\Http\Controllers\UserController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/dashboard', [UserController::class, 'dashboard'])-> name('dashboard');
 Route::get('/', [UserController::class, 'login'])-> name('login');
 Route::post('/login', [UserController::class, 'store'])-> name('userStore');
 
