@@ -31,13 +31,16 @@
             <a href="Produtos">Produtos</a>
             <a href="Fornecedores">Fornecedores</a>
             <a href="Categorias">Categorias</a>
-            <br>
+            <br><br><br><br><br>
             <hr>
             <h3>Movimentacao</h3>
-            <a href="Produtos">Entrada</a>
-            <a href="Fornecedores">Saida</a>
-            <br>
+            <a href="Entradas">Entradas</a>
+            <a href="Saidas">Saidas</a>
+            <br><br><br><br><br>
             <hr>
+            <h3>Administração</h3>
+            <a href="Usuarios">Usuários</a>
+            <a href="logDeAtividades">Log de Atividades</a>
         </div>
 
         <div class="content">
