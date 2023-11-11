@@ -1,4 +1,86 @@
-<div class="Telainicialadm" style="width: 1280px; height: 729px; position: relative; background: white">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/styledashboard.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+  
+    <header>
+      <div class="logo">
+        <h5>ProjetoIntegrador</h5>
+      </div>
+      <div class="logo2">
+        <h2>Unistock</h2>
+      </div>
+      <div class="logo3">
+        <span>Você está logado como: ADMIN</span>
+        <br>
+        <span>IP: 123.456.78.0</span>
+      </div>
+    </header>
+
+    {{-- FIM HEADER! --}}
+
+    <section class="main">
+        <div class="sidebar">
+            <h3>Gerenciamento</h3>
+            <a href="Produtos">Produtos</a>
+            <a href="Fornecedores">Fornecedores</a>
+            <a href="Categorias">Categorias</a>
+            <br>
+            <hr>
+            <h3>Movimentacao</h3>
+            <a href="Produtos">Entrada</a>
+            <a href="Fornecedores">Saida</a>
+            <br>
+            <hr>
+        </div>
+
+        <div class="content">
+
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- <div class="Telainicialadm" style="width: 1280px; height: 729px; position: relative; background: white">
   <div class="Rectangle3" style="width: 229px; height: 838px; left: -13px; top: -7px; position: absolute; background: #717C89; border: 5px #8AAE5C solid"></div>
   <div class="Rectangle4" style="width: 1280px; height: 85px; left: 0px; top: 0px; position: absolute; background: #717C89"></div>
   <div class="Rectangle5" style="width: 280px; height: 174px; left: 285px; top: 129px; position: absolute; background: #8AAE5C; border-radius: 15px"></div>
@@ -39,4 +121,4 @@
   <div style="left: 303px; top: 246px; position: absolute; color: white; font-size: 30px; font-family: Monomaniac One; font-weight: 400; word-wrap: break-word">05</div>
   <div style="width: 33px; height: 41px; left: 618px; top: 207px; position: absolute; color: white; font-size: 30px; font-family: Monomaniac One; font-weight: 400; word-wrap: break-word">00</div>
   <div style="left: 618px; top: 246px; position: absolute; color: white; font-size: 30px; font-family: Monomaniac One; font-weight: 400; word-wrap: break-word">05</div>
-</div>
+</div> --}}
