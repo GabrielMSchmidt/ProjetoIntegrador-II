@@ -16,7 +16,6 @@ use App\Http\Controllers\UserController;
 Route::get('/dashboard', [UserController::class, 'dashboard'])-> name('dashboard');
 Route::get('/', [UserController::class, 'login'])-> name('login');
 Route::post('/login', [UserController::class, 'store'])-> name('userStore');
-
 Route::get('/produtos', [UserController::class, 'produtosOverview'])-> name('produtosOverview');
 
 // Route::get('/', function () {

@@ -70,11 +70,42 @@ header{
     width: 98%;
     height: 87%;
     margin-left: 1%;
-    margin-top: -3%;
+    margin-top: -7%;
     background-color: #717C89;
 }
 
-.novoProduto a1{
+
+
+.top-content{
+    margin: 20px;
+    padding-top: 20px;
+    background-color: #717C89;
+    display: flex;
+    justify-content: left;
+}
+
+.top-content button{
+    margin-right: 5px;
+    background-color: #8AAE5C;
+    color: white;
+}
+
+.top-content h3{
+    position: relative;
+    left: 73%;
+}
+
+.listagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px;
+}
+
+/* .novoProduto a1{
     display: block;
     text-decoration:none;
     margin-left: 15px;
@@ -89,5 +120,5 @@ header{
     margin-top: -29px;
     padding-bottom: 10px;
     color: white;
-}
+} */
 

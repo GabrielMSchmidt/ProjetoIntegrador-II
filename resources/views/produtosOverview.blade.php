@@ -50,14 +50,23 @@
             </div>
             <br>
             <div class="content2">
-                <span class="novoProduto">
-                    <a1 href="Novo Produto">Novo Produto</a1>
-                </span>
-                <span class="novoFornecedor">
-                    <a2 href="Novo Fornecedor">Novo Fornecedor</a2>
-                </span>
-                <h3>NomeDaEmpresa</h3>
-                <p>Código Categoria NomeProduto QtdeProduto CustoProduto UltimaCompra</p>
+                <div class="top-content"> 
+                    <button>Novo Produto </button>
+                    <button>Novo Fornecedor </button>
+                    {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
+                    <h3>NomeDaEmpresa</h3>
+                </div>
+                {{-- <p>Código Categoria NomeProduto QtdeProduto CustoProduto UltimaCompra</p> --}}
+                <hr>
+                <div class="listagem">
+                  <p>Código</p>
+                  <p>Categoria</p>
+                  <p>NomeProduto</p>
+                  <p>QtdeProduto</p>
+                  <p>CustoProduto</p>
+                  <p>UltimaCompra</p>
+                </div>
+                <hr>
             </div>
 
         </div>
