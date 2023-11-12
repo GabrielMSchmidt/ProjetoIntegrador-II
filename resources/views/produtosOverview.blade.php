@@ -45,9 +45,15 @@
 
         <div class="content">
             <div class="title">
+                <br>
                 <h1>Produtos</h1>
+            </div>
             <br>
-            <a href="Novo Produto">Novo Produto</a>
+            <div class="content2">
+                <a1 href="Novo Produto">Novo Produto</a1>
+                <a1 href="Novo Fornecedor">Novo Fornecedor</a1>
+                <h3>NomeDaEmpresa</h3>
+            </div>
 
         </div>
     </section>
