@@ -8,7 +8,7 @@
     <title>Dashboard</title>
 </head>
 <body>
-  
+
     <header>
       <div class="logo">
         <h5>ProjetoIntegrador</h5>
@@ -28,7 +28,7 @@
     <section class="main">
         <div class="sidebar">
             <h3>Gerenciamento</h3>
-            <a href="Produtos">Produtos</a>
+            <a href="produtos">Produtos</a>
             <a href="Fornecedores">Fornecedores</a>
             <a href="Categorias">Categorias</a>
             <br><br><br><br><br>
