@@ -14,7 +14,7 @@
         <h5>ProjetoIntegrador</h5>
       </div>
       <div class="logo2">
-        <h2>Unistock</h2>
+        <a href="{{ route('dashboard') }}">UniStock</a>
       </div>
       <div class="logo3">
         <span>Você está logado como: ADMIN</span>
@@ -28,8 +28,8 @@
     <section class="main">
         <div class="sidebar">
             <h3>Gerenciamento</h3>
-            <a href="produtos">Produtos</a>
-            <a href="Fornecedores">Fornecedores</a>
+            <a href="{{ route('produtosOverview') }}">Produtos</a>
+            <a href="{{ route('fornecedoresOverview') }}">Fornecedores</a>
             <a href="Categorias">Categorias</a>
             <br><br><br><br><br>
             <hr>

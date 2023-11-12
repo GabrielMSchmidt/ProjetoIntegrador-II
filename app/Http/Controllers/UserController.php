@@ -17,4 +17,8 @@ class UserController extends Controller
     public function produtosOverview(){
         return view ('produtosOverview');
     }
+
+    public function fornecedoresOverview(){
+        return view ('fornecedoresOverview');
+    }
 }
