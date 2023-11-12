@@ -50,9 +50,14 @@
             </div>
             <br>
             <div class="content2">
-                <a1 href="Novo Produto">Novo Produto</a1>
-                <a1 href="Novo Fornecedor">Novo Fornecedor</a1>
+                <span class="novoProduto">
+                    <a1 href="Novo Produto">Novo Produto</a1>
+                </span>
+                <span class="novoFornecedor">
+                    <a2 href="Novo Fornecedor">Novo Fornecedor</a2>
+                </span>
                 <h3>NomeDaEmpresa</h3>
+                <p>Código Categoria NomeProduto QtdeProduto CustoProduto UltimaCompra</p>
             </div>
 
         </div>
