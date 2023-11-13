@@ -46,11 +46,11 @@
         <div class="content">
             <div class="title">
                 <br>
-                <h1>Fornecedores</h1>
+                <h3>Fornecedores</h3>
             </div>
             <br>
             <div class="content2">
-                <div class="top-content"> 
+                <div class="top-content">
                     <button>Novo Produto </button>
                     <button>Novo Fornecedor </button>
                     {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
