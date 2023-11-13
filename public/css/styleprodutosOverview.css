@@ -19,7 +19,7 @@ header{
 header a{
     text-decoration: none;
     color: white;
-    font-size: 24px; 
+    font-size: 24px;
     font-weight: bold;
     display: inline-block;
 }
@@ -99,8 +99,14 @@ header a{
 
 .top-content h3{
     position: relative;
-    left: 73%;
+    left: 50%;
 }
+
+.top-content botaoVoltar{
+    position: relative;
+    left: 58%;
+}
+
 
 .listagem{
     display: flex;
