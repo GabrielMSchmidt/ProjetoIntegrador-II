@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/styleprodutosOverview.css') }}">
-    <title>Fornecedores</title>
+    <link rel="stylesheet" href="{{ asset('css/styleBotoesGerencOverview.css') }}">
+    <title>Produtos</title>
 </head>
 <body>
 
@@ -28,8 +28,10 @@
     <section class="main">
         <div class="sidebar">
             <h3>Gerenciamento</h3>
-            <a href="{{ route('produtosOverview') }}">Produtos</a>
-            <a href="{{ route('fornecedoresOverview') }}">Fornecedores</a>
+            {{-- <a href="{{ route('produtosOverview') }}">Produtos</a> --}}
+            <a>Produtos</a>
+            {{-- <a href="{{ route('fornecedoresOverview') }}">Fornecedores</a> --}}
+            <a>Fornecedores</a>
             <a href="Categorias">Categorias</a>
             <br><br><br><br><br>
             <hr>
@@ -46,27 +48,39 @@
         <div class="content">
             <div class="title">
                 <br>
-                <h3>Fornecedores</h3>
+                <h1>Produtos</h1>
             </div>
             <br>
+
             <div class="content2">
                 <div class="top-content">
-                    {{-- <button>Novo Produto </button> --}}
-                    <button>Novo Fornecedor</button>
+                    {{-- <button type="submit" formaction="{{ route('dashboard')}}">Novo Produto</button> --}}
+                    <button>Novo Produto</button>
+                    {{-- <button>Novo Fornecedor </button> --}}
                     {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
                     <h3>NomeDaEmpresa</h3>
                     <button class="botaoVoltar"><a href="{{ route('dashboard') }}">Voltar</a></button>
                 </div>
-                {{-- <p>Código Categoria NomeProduto QtdeProduto CustoProduto UltimaCompra</p> --}}
                 <hr>
+
+
                 <div class="listagem">
                   <p>Código</p>
-                  <p>NomeFornecedor</p>
-                  <p>Telefone</p>
-                  <p>Endereco</p>
+                  <p>Categoria</p>
+                  <p>Fornecedor</p>
+                  <p>NomeProduto</p>
+                  <p>QtdeProduto</p>
+                  <p>CustoProduto</p>
                   <p>UltimaCompra</p>
                 </div>
                 <hr>
+            </div>
+
+            <div class="content3">
+                @csrf
+                <br>
+                <h3>Cadastrar Novo Produto</h3>
+                <input type="text" placeholder="Nome" name="Produto" class="input">
             </div>
 
         </div>

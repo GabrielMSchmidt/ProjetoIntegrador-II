@@ -18,6 +18,7 @@ Route::get('/', [UserController::class, 'login'])-> name('login');
 Route::post('/login', [UserController::class, 'store'])-> name('userStore');
 Route::get('/produtos', [UserController::class, 'produtosOverview'])-> name('produtosOverview');
 Route::get('/fornecedores', [UserController::class, 'fornecedoresOverview'])-> name('fornecedoresOverview');
+Route::get('/novoProduto', [UserController::class, 'novoProdutoOverview'])-> name('novoProdutoOverview');
 
 // Route::get('/', function () {
 //     return view('login');

@@ -51,17 +51,18 @@
             <br>
             <div class="content2">
                 <div class="top-content">
-                    <button type="submit" formaction="{{ route('dashboard')}}">Novo Produto </button>
-                    <button>Novo Fornecedor </button>
+                    <button class="botaoNovoProduto"><a href="{{ route('novoProdutoOverview') }}">Novo Produto</a></button>
+                    {{-- <button type="submit" formaction="{{ route('dashboard')}}">Novo Produto</button> --}}
+                    {{-- <button>Novo Fornecedor </button> --}}
                     {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
                     <h3>NomeDaEmpresa</h3>
                     <button class="botaoVoltar"><a href="{{ route('dashboard') }}">Voltar</a></button>
                 </div>
-                {{-- <p>Código Categoria NomeProduto QtdeProduto CustoProduto UltimaCompra</p> --}}
                 <hr>
                 <div class="listagem">
                   <p>Código</p>
                   <p>Categoria</p>
+                  <p>Fornecedor</p>
                   <p>NomeProduto</p>
                   <p>QtdeProduto</p>
                   <p>CustoProduto</p>
