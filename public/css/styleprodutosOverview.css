@@ -87,7 +87,7 @@ header a{
     padding-top: 20px;
     background-color: #717C89;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
 }
 
 .top-content button{
@@ -97,16 +97,20 @@ header a{
     cursor: pointer;
 }
 
-.top-content h3{
+/* .top-content h3{
     position: relative;
-    left: 50%;
+    left: 30%;
 }
 
 .botaoVoltar{
     position: relative;
     left: 68%;
-}
+} */
 
+.top-content a{
+    color: white;
+    text-decoration: none;
+}
 
 .listagem{
     display: flex;

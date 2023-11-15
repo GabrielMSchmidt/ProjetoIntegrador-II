@@ -91,13 +91,39 @@ header a{
     height: 70%;
     margin-left: 18%;
     margin-top: -45%;
-    background-color: blue;
+    background-color: #8AAE5C;
+}
+
+.content3 form{
+    background-color: #717C89;
+    margin: 5px;
+    
 }
 
 .content3 h3{
     text-align: center;
 }
 
+.content3 fieldset{
+    border: 0;
+}
+
+.content3 .campo{
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.campo label{
+    margin-bottom: 2px;
+
+}
+
+.content3 .botao{
+    margin-right: 5px;
+    background-color: #8AAE5C;
+    color: white;
+    cursor: pointer;
+}
 
 .top-content{
     z-index: 0;
@@ -105,7 +131,7 @@ header a{
     padding-top: 20px;
     background-color: #717C89;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
 }
 
 .top-content button{
@@ -115,7 +141,7 @@ header a{
     cursor: pointer;
 }
 
-.top-content h3{
+/* .top-content h3{
     position: relative;
     left: 50%;
 }
@@ -123,8 +149,12 @@ header a{
 .botaoVoltar{
     position: relative;
     left: 68%;
-}
+} */
 
+.botaoVoltar a{
+    color: white;
+    text-decoration: none;
+}
 
 .listagem{
     display: flex;
