@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\FornecedorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +17,8 @@ use App\Http\Controllers\UserController;
 */
 Route::get('/dashboard', [UserController::class, 'dashboard'])-> name('dashboard');
 Route::get('/', [UserController::class, 'login'])-> name('login');
-Route::post('/login', [UserController::class, 'store'])-> name('userStore');
-Route::get('/produtos', [UserController::class, 'produtosOverview'])-> name('produtosOverview');
-Route::get('/fornecedores', [UserController::class, 'fornecedoresOverview'])-> name('fornecedoresOverview');
-Route::get('/novoProduto', [UserController::class, 'novoProdutoOverview'])-> name('novoProdutoOverview');
+Route::get('/produtos', [ProdutoController::class, 'show'])-> name('produto.show');
+Route::get('/novoProduto', [ProdutoController::class, 'showNP'])-> name('produto.showNP');
+Route::get('/fornecedores', [FornecedorController::class, 'show'])-> name('fornecedor.show');
 
-// Route::get('/', function () {
-//     return view('login');
-// });
+Route::post('/login', [UserController::class, 'store'])-> name('userStore');

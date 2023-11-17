@@ -28,8 +28,8 @@
     <section class="main">
         <div class="sidebar">
             <h3>Gerenciamento</h3>
-            <a href="{{ route('produtosOverview') }}">Produtos</a>
-            <a href="{{ route('fornecedoresOverview') }}">Fornecedores</a>
+            <a href="{{ route('produto.show') }}">Produtos</a>
+            <a href="{{ route('fornecedor.show') }}">Fornecedores</a>
             <a href="Categorias">Categorias</a>
             <br><br><br><br><br>
             <hr>

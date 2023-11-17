@@ -28,8 +28,8 @@
     <section class="main">
         <div class="sidebar">
             <h3>Gerenciamento</h3>
-            <a href="{{ route('produtosOverview') }}">Produtos</a>
-            <a href="{{ route('fornecedoresOverview') }}">Fornecedores</a>
+            <a href="{{ route('produto.show') }}">Produtos</a>
+            <a href="{{ route('fornecedor.show') }}">Fornecedores</a>
             <a href="Categorias">Categorias</a>
             <br><br><br><br><br>
             <hr>
@@ -51,7 +51,7 @@
             <br>
             <div class="content2">
                 <div class="top-content">
-                    <button class="botaoNovoProduto"><a href="{{ route('novoProdutoOverview') }}">Novo Produto</a></button>
+                    <button class="botaoNovoProduto"><a href="{{ route('produto.showNP') }}">Novo Produto</a></button>
                     {{-- <button type="submit" formaction="{{ route('dashboard')}}">Novo Produto</button> --}}
                     {{-- <button>Novo Fornecedor </button> --}}
                     {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
