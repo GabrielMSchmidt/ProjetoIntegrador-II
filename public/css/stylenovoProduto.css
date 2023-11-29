@@ -74,30 +74,20 @@ header a{
     text-align: center;
 }
 
-.content2{
-    z-index: 0;
-    position: relative;
-    width: 98%;
-    height: 87%;
-    margin-left: 1%;
-    margin-top: -7%;
-    background-color: #717C89;
-}
-
 .content3{
-    z-index: 1;
     position: absolute;
     width: 45%;
-    height: 70%;
-    margin-left: 18%;
-    margin-top: -45%;
+    height: 60%;
+    margin-left: 35%;
+    margin-top: 10%;
     background-color: #8AAE5C;
 }
 
 .content3 form{
     background-color: #717C89;
     margin: 5px;
-    
+    height: 96.5%;
+    padding-left: 15px;
 }
 
 .content3 h3{

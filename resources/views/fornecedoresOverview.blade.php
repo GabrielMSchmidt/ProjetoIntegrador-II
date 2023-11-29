@@ -1,76 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+@extends ('layouts.layout')
+
+@section('css')
     <link rel="stylesheet" href="{{ asset('css/styleprodutosOverview.css') }}">
-    <title>Fornecedores</title>
-</head>
-<body>
+@endsection
 
-    <header>
-      <div class="logo">
-        <h5>ProjetoIntegrador</h5>
-      </div>
-      <div class="logo2">
-        <a href="{{ route('dashboard') }}">UniStock</a>
-      </div>
-      <div class="logo3">
-        <span>Você está logado como: ADMIN</span>
+@section('title', 'Fornecedores')
+
+@section('content')
+    <div class="title">
         <br>
-        <span>IP: 123.456.78.0</span>
-      </div>
-    </header>
-
-    {{-- FIM HEADER! --}}
-
-    <section class="main">
-        <div class="sidebar">
-            <h3>Gerenciamento</h3>
-            <a href="{{ route('produto.show') }}">Produtos</a>
-            <a href="{{ route('fornecedor.show') }}">Fornecedores</a>
-            <a href="Categorias">Categorias</a>
-            <br><br><br><br><br>
-            <hr>
-            <h3>Movimentacao</h3>
-            <a href="Entradas">Entradas</a>
-            <a href="Saidas">Saidas</a>
-            <br><br><br><br><br>
-            <hr>
-            <h3>Administração</h3>
-            <a href="Usuarios">Usuários</a>
-            <a href="logDeAtividades">Log de Atividades</a>
+        <h3>Fornecedores</h3>
+    </div>
+    <br>
+    <div class="content2">
+        <div class="top-content">
+            {{-- <button>Novo Produto </button> --}}
+            <button>Novo Fornecedor</button>
+            {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
+            <h3>NomeDaEmpresa</h3>
+            <button class="botaoVoltar"><a href="{{ route('dashboard') }}">Voltar</a></button>
         </div>
-
-        <div class="content">
-            <div class="title">
-                <br>
-                <h3>Fornecedores</h3>
-            </div>
-            <br>
-            <div class="content2">
-                <div class="top-content">
-                    {{-- <button>Novo Produto </button> --}}
-                    <button>Novo Fornecedor</button>
-                    {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
-                    <h3>NomeDaEmpresa</h3>
-                    <button class="botaoVoltar"><a href="{{ route('dashboard') }}">Voltar</a></button>
-                </div>
-                {{-- <p>Código Categoria NomeProduto QtdeProduto CustoProduto UltimaCompra</p> --}}
-                <hr>
-                <div class="listagem">
-                  <p>Código</p>
-                  <p>NomeFornecedor</p>
-                  <p>Telefone</p>
-                  <p>Endereco</p>
-                  <p>UltimaCompra</p>
-                </div>
-                <hr>
-            </div>
-
+        {{-- <p>Código Categoria NomeProduto QtdeProduto CustoProduto UltimaCompra</p> --}}
+        <hr>
+        <div class="listagem">
+            <p>Código</p>
+            <p>NomeFornecedor</p>
+            <p>Telefone</p>
+            <p>Endereco</p>
+            <p>UltimaCompra</p>
         </div>
-    </section>
-
-</body>
-</html>
+        <hr>
+    </div>
+@endsection
