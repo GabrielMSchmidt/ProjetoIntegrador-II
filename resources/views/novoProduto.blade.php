@@ -12,6 +12,7 @@
                 @csrf
                 <br>
                 <h3>Cadastrar Novo Produto</h3>
+                <table class="table">
                 <fieldset>
                   <div class="campo">
                     <label for="nomeProduto">Nome</label>
@@ -56,6 +57,7 @@
                     <button type="submit" class="botao">Salvar</button>
                   </div>
               </fieldset>
+              </table>
               </form>
             </div>
 
