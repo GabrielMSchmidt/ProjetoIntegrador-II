@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('css/styleprodutosOverview.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/stylenovoProduto.css') }}">
 @endsection
 
 @section('title', 'Produtos')
@@ -52,7 +52,7 @@
                   </div>
 
                   <div class="campo">
-                    <button type="menu" class="botao" action="{{ route('') }}">Cancelar</button>
+                    <button type="menu" class="botao" action="{{ route('produto.show') }}">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>
                   </div>
               </fieldset>

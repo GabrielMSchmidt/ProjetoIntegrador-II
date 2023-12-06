@@ -14,7 +14,7 @@
     <br>
     <div class="content2">
         <div class="top-content">
-            <button class="botaoNovoProduto"><a href="{{ route('novoProdutoOverview') }}">Novo Produto</a></button>
+            <button class="botaoNovoProduto"><a href="{{ route('produto.showNP') }}">Novo Produto</a></button>
             {{-- <button type="submit" formaction="{{ route('dashboard')}}">Novo Produto</button> --}}
             {{-- <button>Novo Fornecedor </button> --}}
             {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
