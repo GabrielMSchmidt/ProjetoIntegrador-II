@@ -7,5 +7,5 @@
 @endsection
 
 @section('content')
-    <p>Dashboard</p>
+    <p></p>
 @endsection

@@ -12,6 +12,7 @@
                 @csrf
                 <br>
                 <h3>Cadastrar Novo Produto</h3>
+                <table class="table">
                 <fieldset>
                   <div class="campo">
                     <label for="nomeProduto">Nome</label>
@@ -52,10 +53,11 @@
                   </div>
 
                   <div class="campo">
-                    <button type="menu" class="botao" action="{{ route('dashboard') }}">Cancelar</button>
+                    <button type="menu" class="botao" action="{{ route('produto.show') }}">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>
                   </div>
               </fieldset>
+              </table>
               </form>
             </div>
 

@@ -9,7 +9,7 @@
 @section('content')
     <div class="title">
         <br>
-        <h1>Produtos</h1>
+        <h2>Produtos</h2>
     </div>
     <br>
     <div class="content2">
@@ -18,7 +18,7 @@
             {{-- <button type="submit" formaction="{{ route('dashboard')}}">Novo Produto</button> --}}
             {{-- <button>Novo Fornecedor </button> --}}
             {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
-            <h3>NomeDaEmpresa</h3>
+            <h4>NomeDaEmpresa</h4>
             <button class="botaoVoltar"><a href="{{ route('dashboard') }}">Voltar</a></button>
         </div>
         <hr>

@@ -1,3 +1,5 @@
+{{-- @extends('layouts.layout') --}}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
