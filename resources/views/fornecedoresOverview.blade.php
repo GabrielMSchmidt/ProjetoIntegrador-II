@@ -15,7 +15,7 @@
     <div class="content2">
         <div class="top-content">
             {{-- <button>Novo Produto </button> --}}
-            <button>Novo Fornecedor</button>
+            <button class="botaoNovoProduto"><a href="{{ route('fornecedor.create') }}">Novo Fornecedor</a></button>
             {{-- <a href="Novo Fornecedor">Novo Fornecedor</a> --}}
             <h3>NomeDaEmpresa</h3>
             <button class="botaoVoltar"><a href="{{ route('dashboard') }}">Voltar</a></button>

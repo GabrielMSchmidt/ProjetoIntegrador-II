@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('codigo');
             $table->string('categoria');
             $table->date('data');
-            // $table->number('quantidade');
-            // $table->number('pecoUnitario');
+            $table->integer('quantidade');
+            $table->float('pecoUnitario');
             $table->string('fornecedor');
             $table->string('cnpj');
             $table->rememberToken();

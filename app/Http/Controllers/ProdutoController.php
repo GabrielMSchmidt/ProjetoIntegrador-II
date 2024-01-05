@@ -10,8 +10,8 @@ class ProdutoController extends Controller
         return view ('produtosOverview');
     }
 
-    public function showNP(){
-        return view ('novoProduto');
+    public function create(){
+        return view ('produtosCreate');
     }
 
     public function store(){

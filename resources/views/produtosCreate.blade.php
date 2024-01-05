@@ -53,7 +53,7 @@
                   </div>
 
                   <div class="campo">
-                    <button type="menu" class="botao" action="{{ route('produto.show') }}">Cancelar</button>
+                    <button type="button" class="botao" onclick="history.back()">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>
                   </div>
               </fieldset>
