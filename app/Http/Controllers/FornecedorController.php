@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\Fornecedor;
 use Illuminate\Http\Request;
-use Illuminate\App\Models\Fornecedor;
 
 class FornecedorController extends Controller
 {
@@ -19,7 +20,7 @@ class FornecedorController extends Controller
         
         Fornecedor::create($request->all());
 
-        return redirect()->route('fornecedores.show');
+        return redirect()->route('fornecedor.show');
     }
 
     public function update(){
@@ -30,3 +31,5 @@ class FornecedorController extends Controller
 
     }
 }
+
+?>

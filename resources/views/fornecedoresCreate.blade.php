@@ -16,18 +16,18 @@
                 <fieldset>
                   <div class="campo">
                     <label for="nomeFornecedor">Nome</label>
-                    <input type="text" placeholder="Nome" name="nomeFornecedor" id="nomeForn" required>
+                    <input type="text" placeholder="Nome" name="name" required>
 
                     <label for="codFornecedor">Código</label>
-                    <input type="number" placeholder="Código" name="codFornecedor" id="codigoForn" required>
+                    <input type="number" placeholder="Código" name="codigo" required>
                   </div>
 
                   <div class="campo">
                     <label for="cnpjFornecedor">CNPJ</label>
-                    <input type="text" placeholder="CNPJ" name="cnpjFornecedor" id="cnpjForn" required>
+                    <input type="text" placeholder="CNPJ" name="cnpj" required>
 
                     <label for="dataFornecedor">Data</label>
-                    <input type="date" name="dataFornecedor" id="dataForn" required>
+                    <input type="date" name="data" required>
                   </div>
                   
                   <div class="campo">

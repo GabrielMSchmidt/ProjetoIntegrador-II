@@ -17,6 +17,7 @@ use App\Http\Controllers\FornecedorController;
 */
 Route::get('/dashboard', [UserController::class, 'dashboard'])-> name('dashboard');
 Route::get('/', [UserController::class, 'login'])-> name('login');
+Route::post('/dashboard', [UserController::class, 'create'])-> name('user.create');
 
 Route::get('/produtos', [ProdutoController::class, 'show'])-> name('produto.show');
 Route::get('/novoProduto', [ProdutoController::class, 'create'])-> name('produto.create');
