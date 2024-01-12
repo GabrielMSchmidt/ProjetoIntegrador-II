@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\Produto;
 use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
@@ -14,8 +16,11 @@ class ProdutoController extends Controller
         return view ('produtosCreate');
     }
 
-    public function store(){
+    public function store(Request $request){
 
+        Produto::create($request->all());
+
+        return redirect()->route('produto.show');
     }
 
     public function update(){
@@ -26,5 +31,3 @@ class ProdutoController extends Controller
 
     }
 }
-
-?>

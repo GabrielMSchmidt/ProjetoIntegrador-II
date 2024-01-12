@@ -21,6 +21,7 @@ Route::post('/dashboard', [UserController::class, 'create'])-> name('user.create
 
 Route::get('/produtos', [ProdutoController::class, 'show'])-> name('produto.show');
 Route::get('/novoProduto', [ProdutoController::class, 'create'])-> name('produto.create');
+Route::post('/produtos', [ProdutoController::class, 'store'])-> name('produto.store');
 
 Route::get('/fornecedores', [FornecedorController::class, 'show'])-> name('fornecedor.show');
 Route::get('/novoFornecedor', [FornecedorController::class, 'create'])-> name('fornecedor.create');

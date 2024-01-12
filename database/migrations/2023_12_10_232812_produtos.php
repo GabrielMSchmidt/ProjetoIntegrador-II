@@ -18,10 +18,9 @@ return new class extends Migration
             $table->string('categoria');
             $table->date('data');
             $table->integer('quantidade');
-            $table->float('pecoUnitario');
+            $table->float('precoUnitario');
             $table->string('fornecedor');
             $table->string('cnpj');
-            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        
     }
 };
