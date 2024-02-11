@@ -26,5 +26,6 @@ Route::post('/produtos', [ProdutoController::class, 'store'])-> name('produto.st
 Route::get('/fornecedores', [FornecedorController::class, 'show'])-> name('fornecedor.show');
 Route::get('/novoFornecedor', [FornecedorController::class, 'create'])-> name('fornecedor.create');
 Route::post('/fornecedores', [FornecedorController::class, 'store'])-> name('fornecedor.store');
+Route::get('/fornecedoresTeste', [FornecedorController::class, 'teste'])-> name('fornecedor.teste');
 
 Route::post('/login', [UserController::class, 'store'])-> name('userStore');

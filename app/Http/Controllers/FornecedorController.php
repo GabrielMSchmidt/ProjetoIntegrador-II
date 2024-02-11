@@ -23,6 +23,13 @@ class FornecedorController extends Controller
         return redirect()->route('fornecedor.show');
     }
 
+    public function teste(){
+
+        $fornecedores = Fornecedor::get();
+
+        return view ('fornecedoresTeste', compact('fornecedores'));
+    }
+
     public function update(){
 
     }
