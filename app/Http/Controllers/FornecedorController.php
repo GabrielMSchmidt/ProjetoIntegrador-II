@@ -27,6 +27,7 @@ class FornecedorController extends Controller
         
         if (!$fornecedor = Fornecedor::find($id))
             return redirect()-> route('fornecedor.index');
+
         return view ('fornecedoresShow', compact('fornecedor'));
     }
 
@@ -37,8 +38,22 @@ class FornecedorController extends Controller
         return view ('fornecedoresTeste', compact('fornecedores'));
     }
 
-    public function update(){
+    public function edit($id){
 
+        if (!$fornecedor = Fornecedor::find($id))
+            return redirect()-> route('fornecedor.index');
+        
+        return view('fornecedoresEdit', compact('fornecedor'));
+   }
+
+   public function update(Request $request, $id){
+
+    if (!$fornecedor = Fornecedor::find($id))
+        return redirect()-> route('fornecedor.index');
+
+    $fornecedor->update($request->all());
+
+    return redirect()->route('fornecedor.teste');
     }
 
     public function delete(){

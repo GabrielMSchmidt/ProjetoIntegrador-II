@@ -29,11 +29,13 @@
                   <hr>
                     @foreach ($fornecedores as $fornecedor)
                       <li>
-                        {{ $fornecedor->name }} |
+                        {{ $fornecedor->name }}
                         {{-- {{ $fornecedor->codigo }} -
                         {{ $fornecedor->cnpj }} -
                         {{ $fornecedor->data }} - --}}
-                        <a href="{{ route('fornecedor.show', $fornecedor->id) }}">Detalhes</a>
+                        | <a href="{{ route('fornecedor.show', $fornecedor->id) }}">Detalhes</a>
+                        | <a href="{{ route('fornecedor.edit', $fornecedor->id) }}">Editar</a>
+
                       </li>
                     @endforeach
                 </table>
