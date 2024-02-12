@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class FornecedorController extends Controller
 {
-    public function show(){
+    public function index(){
         return view ('fornecedoresOverview');
     }
 
@@ -20,7 +20,14 @@ class FornecedorController extends Controller
 
         Fornecedor::create($request->all());
 
-        return redirect()->route('fornecedor.show');
+        return redirect()->route('fornecedor.index');
+    }
+
+    public function show($id){
+        
+        if (!$fornecedor = Fornecedor::find($id))
+            return redirect()-> route('fornecedor.index');
+        return view ('fornecedoresShow', compact('fornecedor'));
     }
 
     public function teste(){

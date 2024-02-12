@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('css/stylenovoProduto.css') }}">
 @endsection
 
-@section('title', 'Fornecedor')
+@section('title', 'Fornecedores')
 
 @section('content')
             <div class="content3">
@@ -15,27 +15,27 @@
                 <table class="table">
                   <hr>
                   <div class= "listagem">
-                    {{-- <p>Nome</p>
+                    <p>Nome</p>
                     <p>Código</p>
                     <p>CNPJ</p>
                     <p>Data</p>
                     <hr>
-                     --}}
+                     {{-- <br>
+                      <p>{{ $fornecedor->name }}</p>
+                      <p>{{ $fornecedor->codigo }}</p>
+                      <p>{{ $fornecedor->cnpj }}</p>
+                      <p>{{ $fornecedor->data }}</p> --}}
+                  </div> 
+                  <hr>
                     @foreach ($fornecedores as $fornecedor)
                       <li>
-                        {{ $fornecedor->name }} -
-                        {{ $fornecedor->codigo }} -
+                        {{ $fornecedor->name }} |
+                        {{-- {{ $fornecedor->codigo }} -
                         {{ $fornecedor->cnpj }} -
-                        {{ $fornecedor->data }}
+                        {{ $fornecedor->data }} - --}}
+                        <a href="{{ route('fornecedor.show', $fornecedor->id) }}">Detalhes</a>
                       </li>
-                      {{-- <br>
-                        <p>{{ $fornecedor->name }}</p>
-                        <p>{{ $fornecedor->codigo }}</p>
-                        <p>{{ $fornecedor->cnpj }}</p>
-                        <p>{{ $fornecedor->data }}</p> --}}
                     @endforeach
-                    </div> 
-                    <hr>
                 </table>
               </form>
             </div>
