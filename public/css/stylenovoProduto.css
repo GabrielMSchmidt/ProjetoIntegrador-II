@@ -80,10 +80,12 @@ header a{
     height: 52%;
     margin-left: 35%;
     margin-top: 10%;
-    background-color: #8AAE5C;
+    /* background-color: #8AAE5C; */
+    background-color: #717C89;
+    border-radius: 3px;
 }
 
-.content3 form{
+.content3 .form_content3{
     background-color: #717C89;
     margin: 5px;
     height: 96.5%;

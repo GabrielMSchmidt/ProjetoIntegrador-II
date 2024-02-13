@@ -56,8 +56,14 @@ class FornecedorController extends Controller
     return redirect()->route('fornecedor.teste');
     }
 
-    public function delete(){
+    public function destroy($id){
+        
+        if (!$fornecedor = Fornecedor::find($id))
+            return redirect()-> route('fornecedor.index');
 
+        $fornecedor->delete();
+
+        return redirect()->route('fornecedor.teste');
     }
 }
 

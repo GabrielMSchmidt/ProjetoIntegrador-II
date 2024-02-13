@@ -8,11 +8,8 @@
 
 @section('content')
             <div class="content3">
-              <form action="{{ route('fornecedor.store') }}" method="post">
-                @csrf
                 <br>
                 <h3>Dados do Fornecedor {{$fornecedor->name}}</h3>
-                <table class="table">
                     <hr>
                     <ul>
                         <li>Nome: {{ $fornecedor->name }}</li>
@@ -20,8 +17,11 @@
                         <li>CNPJ: {{ $fornecedor->cnpj }}</li>
                         <li>Data de Criação: {{ $fornecedor->data }}</li>
                     </ul>
-                </table>
-              </form>
+                    <form action="{{ route('fornecedor.destroy', $fornecedor->id) }}" method="POST">
+                      @method('DELETE')
+                      @csrf
+                      <button type="submit">Deletar</button>
+                    </form>
             </div>
 
 </body>

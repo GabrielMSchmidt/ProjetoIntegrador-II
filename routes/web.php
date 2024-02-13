@@ -27,6 +27,7 @@ Route::get('/produtos', [ProdutoController::class, 'index'])-> name('produto.ind
 Route::get('/novoProduto', [ProdutoController::class, 'create'])-> name('produto.create');
 Route::post('/produtos', [ProdutoController::class, 'store'])-> name('produto.store');
 
+Route::delete('/fornecedores/{id}', [FornecedorController::class, 'destroy'])-> name('fornecedor.destroy');
 Route::put('/fornecedores/{id}', [FornecedorController::class, 'update'])-> name('fornecedor.update');
 Route::get('/fornecedores/{id}/edit', [FornecedorController::class, 'edit'])-> name('fornecedor.edit');
 Route::get('/fornecedores', [FornecedorController::class, 'index'])-> name('fornecedor.index');

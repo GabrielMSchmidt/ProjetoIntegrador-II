@@ -8,7 +8,7 @@
 
 @section('content')
             <div class="content3">
-              <form action="{{ route('fornecedor.store') }}" method="post">
+              <form action="{{ route('fornecedor.store') }}" method="post" class="form_content3">
                 @csrf
                 <br>
                 <h3>Cadastrar Novo Fornecedor</h3>
