@@ -41,9 +41,9 @@
                   <div class="campo">
                     <label for="fornecedorProd">Fornecedor</label>
                     <select name="fornecedor" required>
-                      <option>Fornecedor 1</option>
-                      <option>Fornecedor 2</option>
-                      <option>Fornecedor 3</option>
+                      @foreach ($fornecedores as $fornecedor)
+                          <option>{{ $fornecedor->name }}</option>
+                      @endforeach
                     </select>
                   </div>
 

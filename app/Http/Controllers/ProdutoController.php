@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Produto;
+use App\Models\Fornecedor;
 use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
@@ -13,7 +14,9 @@ class ProdutoController extends Controller
     }
 
     public function create(){
-        return view ('produtosCreate');
+
+        $fornecedores = Fornecedor::get();
+        return view ('produtosCreate', compact('fornecedores'));
     }
 
     public function store(Request $request){
@@ -31,3 +34,5 @@ class ProdutoController extends Controller
 
     }
 }
+
+?>
