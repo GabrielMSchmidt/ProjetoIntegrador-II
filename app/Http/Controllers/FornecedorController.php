@@ -9,7 +9,10 @@ use Illuminate\Http\Request;
 class FornecedorController extends Controller
 {
     public function index(){
-        return view ('fornecedoresOverview');
+
+        $fornecedores = Fornecedor::get();
+
+        return view ('fornecedoresOverview', compact('fornecedores'));
     }
 
     public function create(){
@@ -24,7 +27,7 @@ class FornecedorController extends Controller
     }
 
     public function show($id){
-        
+
         if (!$fornecedor = Fornecedor::find($id))
             return redirect()-> route('fornecedor.index');
 
@@ -42,7 +45,7 @@ class FornecedorController extends Controller
 
         if (!$fornecedor = Fornecedor::find($id))
             return redirect()-> route('fornecedor.index');
-        
+
         return view('fornecedoresEdit', compact('fornecedor'));
    }
 
@@ -57,7 +60,7 @@ class FornecedorController extends Controller
     }
 
     public function destroy($id){
-        
+
         if (!$fornecedor = Fornecedor::find($id))
             return redirect()-> route('fornecedor.index');
 

@@ -2,7 +2,6 @@
     <h3>Gerenciamento</h3>
     <a href="{{ route('produto.index') }}">Produtos</a>
     <a href="{{ route('fornecedor.index') }}">Fornecedores</a>
-    <a href="Categorias">Categorias</a>
     <br><br><br><br><br>
     <hr>
     <h3>Movimentacao</h3>

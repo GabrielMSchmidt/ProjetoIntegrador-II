@@ -9,7 +9,7 @@
 @section('content')
     <div class="title">
         <br>
-        <h2>Produtos</h2>
+        <h3>Produtos</h3>
     </div>
     <br>
     <div class="content2">

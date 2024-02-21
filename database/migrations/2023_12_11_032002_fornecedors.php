@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('codigo');
             $table->string('cnpj');
             $table->date('data');
+            $table->string('telefone');
             $table->timestamps();
         });
     }
