@@ -29,7 +29,12 @@
                     <label for="dataFornecedor">Data</label>
                     <input type="date" name="data" required>
                   </div>
-                  
+
+                  <div class="campo">
+                    <label for="telefoneFornecedor">Telefone</label>
+                    <input type="text" placeholder="Telefone" name="telefone" required>
+                  </div>
+
                   <div class="campo">
                     <button type="button" class="botao" onclick="history.back()">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>

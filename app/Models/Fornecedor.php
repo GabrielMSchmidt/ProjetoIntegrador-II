@@ -14,5 +14,6 @@ class Fornecedor extends Model
         'codigo',
         'cnpj',
         'data',
+        'telefone',
     ];
 }
