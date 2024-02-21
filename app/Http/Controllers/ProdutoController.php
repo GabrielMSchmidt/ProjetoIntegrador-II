@@ -23,7 +23,7 @@ class ProdutoController extends Controller
 
         Produto::create($request->all());
 
-        return redirect()->route('produto.show');
+        return redirect()->route('produto.index');
     }
 
     public function update(){
