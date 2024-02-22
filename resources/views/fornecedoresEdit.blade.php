@@ -8,12 +8,11 @@
 
 @section('content')
             <div class="content3">
-              <form action="{{ route('fornecedor.update', $fornecedor->id) }}" method="post">
+              <form action="{{ route('fornecedor.update', $fornecedor->id) }}" method="post" class="form_content3">
                 @method('PUT')
                 @csrf
                 <br>
                 <h3>Editar Fornecedor {{ $fornecedor->name }}</h3>
-                <table class="table">
                 <fieldset>
                   <div class="campo">
                     <label for="nomeFornecedor">Nome</label>
@@ -32,11 +31,15 @@
                   </div>
                   
                   <div class="campo">
+                    <label for="telefoneFornecedor">Telefone</label>
+                    <input type="text" placeholder="Telefone" name="telefone" value="{{$fornecedor->telefone}}" required>
+                  </div>
+
+                  <div class="botoesF">
                     <button type="button" class="botao" onclick="history.back()">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>
                   </div>
                 </fieldset>
-                </table>
               </form>
             </div>
 

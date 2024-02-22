@@ -135,3 +135,11 @@ th, td, tr {
     margin: 5px;
 }
 
+.link {
+    color:white;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: black;
+}

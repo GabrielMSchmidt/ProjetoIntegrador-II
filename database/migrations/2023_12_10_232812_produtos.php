@@ -19,8 +19,7 @@ return new class extends Migration
             $table->date('data');
             $table->integer('quantidade');
             $table->float('precoUnitario');
-            $table->string('fornecedor');
-            $table->string('cnpj');
+            $table->integer('fornecedor');
             $table->timestamps();
         });
     }

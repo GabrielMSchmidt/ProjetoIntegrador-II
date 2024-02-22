@@ -17,6 +17,5 @@ class Produto extends Model
         'quantidade',
         'precoUnitario',
         'fornecedor',
-        'cnpj',
     ];
 }

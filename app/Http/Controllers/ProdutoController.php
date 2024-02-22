@@ -10,7 +10,9 @@ use Illuminate\Http\Request;
 class ProdutoController extends Controller
 {
     public function index(){
-        return view ('produtosOverview');
+        $produtos = Produto::get();
+
+        return view ('produtosOverview', compact('produtos'));
     }
 
     public function create(){
@@ -21,17 +23,52 @@ class ProdutoController extends Controller
 
     public function store(Request $request){
 
-        Produto::create($request->all());
+        $data = $request->all();
+        $fornecedor = Fornecedor::where('name', $request->fornecedor)->first();
+        $data['fornecedor'] = $fornecedor->id;
+        
+        Produto::create($data);
 
         return redirect()->route('produto.index');
     }
 
-    public function update(){
+    public function show($id){
 
+        if (!$produto = Produto::find($id))
+            return redirect()-> route('produto.index');
+
+        $fornecedor = Fornecedor::find($produto->fornecedor);
+
+        return view ('produtosShow', compact('produto'), compact('fornecedor'));
     }
 
-    public function delete(){
+    public function edit($id){
 
+        if (!$produto = Produto::find($id))
+            return redirect()-> route('produto.index');
+
+        $fornecedor = Fornecedor::get();
+        
+        return view('produtosEdit', compact('produto'), compact('fornecedor'));
+    }
+
+    public function update(Request $request, $id){
+        
+        if (!$produto = Produto::find($id))
+            return redirect()-> route('Produto.index');
+
+        $produto->update($request->all());
+
+        return redirect()->route('produto.index');
+    }
+
+    public function destroy($id){
+        
+        if (!$produto = Produto::find($id))
+            return redirect()-> route('produto.index');
+
+        $produto->delete();
+        return redirect()->route('produto.index');
     }
 }
 

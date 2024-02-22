@@ -76,13 +76,14 @@ header a{
 
 .content3{
     position: absolute;
-    width: 50%;
-    height: 52%;
+    width: 40%;
+    height: 46%;
     margin-left: 35%;
     margin-top: 10%;
-    /* background-color: #8AAE5C; */
     background-color: #717C89;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content3 .form_content3{
@@ -94,6 +95,34 @@ header a{
 
 .content3 h3{
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.dados {
+    margin-bottom: 10px;
+}
+
+.dados label {
+    display: block;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.5%;
+}
+
+.botoesF{
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+.content3 .botao{
+    margin-right: 8px;
+    background-color: #8AAE5C;
+    color: white;
+    cursor: pointer;
 }
 
 .content3 fieldset{
@@ -101,21 +130,12 @@ header a{
 }
 
 .content3 .campo{
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     margin-right: 5px;
-}
-
-.campo label{
-    margin-bottom: 2px;
 
 }
 
-.content3 .botao{
-    margin-right: 5px;
-    background-color: #8AAE5C;
-    color: white;
-    cursor: pointer;
-}
+
 
 .top-content{
     z-index: 0;

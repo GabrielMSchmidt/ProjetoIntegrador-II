@@ -12,7 +12,6 @@
                 @csrf
                 <br>
                 <h3>Cadastrar Novo Fornecedor</h3>
-                <table class="table">
                 <fieldset>
                   <div class="campo">
                     <label for="nomeFornecedor">Nome</label>
@@ -35,12 +34,11 @@
                     <input type="text" placeholder="Telefone" name="telefone" required>
                   </div>
 
-                  <div class="campo">
+                  <div class="botoesF">
                     <button type="button" class="botao" onclick="history.back()">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>
                   </div>
                 </fieldset>
-                </table>
               </form>
             </div>
 

@@ -34,40 +34,40 @@ class FornecedorController extends Controller
         return view ('fornecedoresShow', compact('fornecedor'));
     }
 
-    public function teste(){
-
-        $fornecedores = Fornecedor::get();
-
-        return view ('fornecedoresTeste', compact('fornecedores'));
-    }
-
+    
     public function edit($id){
 
         if (!$fornecedor = Fornecedor::find($id))
             return redirect()-> route('fornecedor.index');
-
+    
         return view('fornecedoresEdit', compact('fornecedor'));
-   }
+    }
 
-   public function update(Request $request, $id){
+    public function update(Request $request, $id){
+        
+        if (!$fornecedor = Fornecedor::find($id))
+            return redirect()-> route('fornecedor.index');
 
-    if (!$fornecedor = Fornecedor::find($id))
-        return redirect()-> route('fornecedor.index');
+        $fornecedor->update($request->all());
 
-    $fornecedor->update($request->all());
-
-    return redirect()->route('fornecedor.teste');
+        return redirect()->route('fornecedor.index');
     }
 
     public function destroy($id){
-
+        
         if (!$fornecedor = Fornecedor::find($id))
             return redirect()-> route('fornecedor.index');
 
         $fornecedor->delete();
 
-        return redirect()->route('fornecedor.teste');
+        return redirect()->route('fornecedor.index');
     }
 }
 
+// public function teste(){
+
+//     $fornecedores = Fornecedor::get();
+
+//     return view ('fornecedoresTeste', compact('fornecedores'));
+// }
 ?>

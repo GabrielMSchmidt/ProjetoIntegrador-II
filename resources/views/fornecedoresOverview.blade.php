@@ -36,6 +36,8 @@
                   <td>{{$fornecedor->name}}</td>
                   <td>{{$fornecedor->cnpj}}</td>
                   <td>{{$fornecedor->telefone}}</td>
+                  <td><a href="{{route('fornecedor.show', $fornecedor->id) }}" class="link">Detalhes</a></td>
+                  <td><a href="{{route('fornecedor.edit', $fornecedor->id) }}" class="link">Editar</a></td>
                 </tr>
                @endforeach
             </tbody>

@@ -4,37 +4,38 @@
     <link rel="stylesheet" href="{{ asset('css/stylenovoProduto.css') }}">
 @endsection
 
-@section('title', 'Produtos')
+@section('title', "Editar Produto $produto->name")
 
 @section('content')
             <div class="content3">
-              <form action="{{ route('produto.store') }}" method="post" class="form_content3">
+              <form action="{{ route('produto.update', $produto->id) }}" method="post" class="form_content3">
+                @method('PUT')
                 @csrf
                 <br>
-                <h3>Cadastrar Novo Produto</h3>
+                <h3>Editar produto {{ $produto->name }}</h3>
                 <fieldset>
                   <div class="campo">
                     <label for="nomeProduto">Nome</label>
-                    <input type="text" placeholder="Nome" name="name" id="nomeProd" required>
+                    <input type="text" placeholder="Nome" name="name" value="{{$produto->name}}" required>
 
                     <label for="codProduto">Código</label>
-                    <input type="number" placeholder="Código" name="codigo" id="codigoProd" required>
+                    <input type="number" placeholder="Código" name="codigo" value="{{$produto->codigo}}" required>
                   </div>
 
                   <div class="campo">
                     <label for="categoriaProduto">Categoria</label>
-                    <input type="text" placeholder="Categoria" name="categoria" id="categoriaProd" required>
+                    <input type="text" placeholder="Categoria" name="categoria" value="{{$produto->categoria}}" required>
 
                     <label for="dataProduto">Data</label>
-                    <input type="date" name="data" id="dataProd" required>
+                    <input type="date" name="data" value="{{$produto->data}}" required>
                   </div>
 
                   <div class="campo">
                     <label for="qtdeProduto">Quantidade</label>
-                    <input type="integer" placeholder="Quantidade" name="quantidade" id="qtdeProd" required>
+                    <input type="integer" placeholder="Quantidade" name="quantidade" value="{{$produto->quantidade}}" required>
 
                     <label for="preçoProduto">Preço Unitário</label>
-                    <input type="float" placeholder="Preço Unitário" name="precoUnitario" id="precoProd" required>
+                    <input type="float" placeholder="Preço Unitário" name="precoUnitario" value="{{$produto->precoUnitario}}" required>
                   </div>
 
                   <div class="campo">
@@ -45,12 +46,12 @@
                       @endforeach
                     </select>
                   </div>
-
-                  <div class="botoesF">
+                  
+                  <div class="botoes">
                     <button type="button" class="botao" onclick="history.back()">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>
                   </div>
-              </fieldset>
+                </fieldset>
               </form>
             </div>
 
