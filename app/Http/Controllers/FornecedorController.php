@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Http\Requests\StoreUpdateFornecedorFormRequest;
 use App\Models\Fornecedor;
 use Illuminate\Http\Request;
 
@@ -19,7 +19,7 @@ class FornecedorController extends Controller
         return view ('fornecedoresCreate');
     }
 
-    public function store(Request $request){
+    public function store(StoreUpdateFornecedorFormRequest $request){
 
         Fornecedor::create($request->all());
 
