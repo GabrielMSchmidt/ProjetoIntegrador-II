@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Http\Requests\StoreUpdateProdutoFormRequest;
 use App\Models\Produto;
 use App\Models\Fornecedor;
 use Illuminate\Http\Request;
@@ -21,7 +22,7 @@ class ProdutoController extends Controller
         return view ('produtosCreate', compact('fornecedores'));
     }
 
-    public function store(Request $request){
+    public function store(StoreUpdateProdutoFormRequest $request){
 
         $data = $request->all();
         $fornecedor = Fornecedor::where('name', $request->fornecedor)->first();
