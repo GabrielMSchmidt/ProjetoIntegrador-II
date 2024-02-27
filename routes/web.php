@@ -21,7 +21,10 @@ use App\Http\Controllers\{
 */
 Route::get('/dashboard', [UserController::class, 'dashboard'])-> name('dashboard');
 Route::get('/', [UserController::class, 'login'])-> name('login');
+Route::get('/register', [UserController::class, 'register'])-> name('register'); 
 Route::post('/dashboard', [UserController::class, 'create'])-> name('user.create');
+Route::post('/login', [UserController::class, 'store'])-> name('user.store');
+
 
 Route::delete('/produtos/{id}', [ProdutoController::class, 'destroy'])-> name('produto.destroy');
 Route::put('/produtos/{id}', [ProdutoController::class, 'update'])-> name('produto.update');
@@ -41,4 +44,3 @@ Route::post('/fornecedores', [FornecedorController::class, 'store'])-> name('for
 Route::get('/fornecedores/{id}',[FornecedorController::class, 'show'])-> name('fornecedor.show');
 // Route::get('/fornecedoresTeste', [FornecedorController::class, 'teste'])-> name('fornecedor.teste');
 
-Route::post('/login', [UserController::class, 'store'])-> name('userStore');
