@@ -41,12 +41,12 @@
                   <div class="campo">
                     <label for="fornecedorProd">Fornecedor</label>
                     <select name="fornecedor" required>
-                      @foreach ($fornecedores as $fornecedor)
+                      @foreach ($fornecedor as $fornecedor)
                           <option>{{ $fornecedor->name }}</option>
                       @endforeach
                     </select>
                   </div>
-                  
+
                   <div class="botoes">
                     <button type="button" class="botao" onclick="history.back()">Cancelar</button>
                     <button type="submit" class="botao">Salvar</button>

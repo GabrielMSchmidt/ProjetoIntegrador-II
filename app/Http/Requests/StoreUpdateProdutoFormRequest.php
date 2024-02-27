@@ -23,12 +23,12 @@ class StoreUpdateProdutoFormRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:25|min:3',
-            'codigo' => 'required|integer|unique:produtos|',
+            'codigo' => 'required|unique:produtos|',
             'categoria' => 'required|string|max:25|min:3',
             'data' => 'required|date|before or equal:today|',
             'quantidade' => 'required|integer|min:0',
             'precoUnitario' => 'required|decimal:1,2|min:0.00',
-            'fornecedor' => 'required|integer|min:0',
+            'fornecedor' => 'required|string|min:0',
         ];
     }
 }

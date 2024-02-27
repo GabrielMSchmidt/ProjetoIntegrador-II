@@ -25,7 +25,7 @@
                     <form action="{{ route('produto.destroy', $produto->id) }}" method="POST" class="formulario">
                       @method('DELETE')
                       @csrf
-                      <div class="botoes">
+                      <div class="botoesD">
                         <button type="button" class="botao" onclick="history.back()"> Cancelar </button>
                         <button type="submit" class="botao"> Deletar </button>
                       </div>

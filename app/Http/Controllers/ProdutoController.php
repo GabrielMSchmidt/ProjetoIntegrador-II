@@ -27,7 +27,7 @@ class ProdutoController extends Controller
         $data = $request->all();
         $fornecedor = Fornecedor::where('name', $request->fornecedor)->first();
         $data['fornecedor'] = $fornecedor->id;
-        
+
         Produto::create($data);
 
         return redirect()->route('produto.index');
@@ -49,22 +49,26 @@ class ProdutoController extends Controller
             return redirect()-> route('produto.index');
 
         $fornecedor = Fornecedor::get();
-        
+
         return view('produtosEdit', compact('produto'), compact('fornecedor'));
     }
 
     public function update(Request $request, $id){
-        
+
         if (!$produto = Produto::find($id))
             return redirect()-> route('Produto.index');
 
-        $produto->update($request->all());
+        $data = $request->all();
+        $fornecedor = Fornecedor::where('name', $request->fornecedor)->first();
+        $data['fornecedor'] = $fornecedor->id;
+
+        $produto->update($data);
 
         return redirect()->route('produto.index');
     }
 
     public function destroy($id){
-        
+
         if (!$produto = Produto::find($id))
             return redirect()-> route('produto.index');
 
